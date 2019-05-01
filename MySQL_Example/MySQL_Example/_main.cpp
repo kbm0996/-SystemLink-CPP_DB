@@ -1,5 +1,6 @@
 #pragma comment(lib,"mysql/lib/vs14/mysqlclient.lib")
 #include "mysql/include/mysql.h"
+#include <cstdio>
 
 int main()
 {
