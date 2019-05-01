@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mysql\include\big_endian.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\binary_log_types.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\byte_order_generic.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\byte_order_generic_x86.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\decimal.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\errmsg.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\keycache.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\little_endian.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\client_authentication.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\client_plugin.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\get_password.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\mysql_lex_string.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\plugin_auth_common.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\plugin_trace.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\mysql_file.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\mysql_idle.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\mysql_mdl.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\mysql_memory.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\mysql_ps.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\mysql_socket.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\mysql_sp.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\mysql_stage.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\mysql_statement.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\mysql_table.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\mysql_thread.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\mysql_transaction.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\psi.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\psi_base.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\psi\psi_memory.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\service_mysql_alloc.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql\service_my_snprintf.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysqld_ername.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysqld_error.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql_com.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql_com_server.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql_embed.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql_time.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql_version.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_alloc.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_byteorder.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_command.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_compiler.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_config.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_dbug.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_dir.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_getopt.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_global.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_list.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_sys.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_thread.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_thread_local.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_xml.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\m_ctype.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\m_string.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\sql_common.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\sql_state.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\sslopt-case.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\sslopt-longopts.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\sslopt-vars.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\thr_cond.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\thr_mutex.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\thr_rwlock.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\typelib.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

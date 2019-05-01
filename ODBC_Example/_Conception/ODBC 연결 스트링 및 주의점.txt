@@ -1,0 +1,12 @@
+http://www.connectionstrings.com/mysql/
+
+	char szConnect[1024] = "Driver={MySQL ODBC 5.3 Unicode Driver}; Server=127.0.0.1; Database=test; User=root; Password=procademy; Option=3;";
+	SQLCHAR OutCon[255];
+	SQLSMALLINT cbOutCon;
+
+
+	SQLDriverConnect(hDbc, NULL, (SQLCHAR *) szConnect, sizeof(szConnect), OutCon, sizeof(OutCon), &cbOutCon, SQL_DRIVER_COMPLETE);//SQL_DRIVER_NOPROMPT);
+
+
+
+# MySQL ODBC 를 64bit 로 설치시,  64bit 로 컴파일이 되어야 함
