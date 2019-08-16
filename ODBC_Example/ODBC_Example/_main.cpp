@@ -119,17 +119,17 @@ SQLRETURN MYSQLConnect(const WCHAR * szODBCIP, const WCHAR * szODBCName, const W
 	// DBMS 연결
 	//
 	////////////////////////////////////////////////////////////////
-	// 3. DB 연결 방법 : DSN (only x32)
-	// * SQLConnect() : 연결 핸들로 드라이버 및 데이터 원본에 대한 연결 설정
+	// 3. DB 연결 방법1
+	// * SQLConnect() : 사용자 DSN을 통하여 DB 연결
 	// - ODBC 드라이버 DSN 설정 : 제어판 ~ 관리도구 ~ 데이터원본(ODBC) ~ 사용자 DSN 탭
 	//if (iRetval = SQLConnect(g_hDbc, (SQLTCHAR*)"connect_gameschema", SQL_NTS, (SQLTCHAR*)szODBCID, SQL_NTS, (SQLTCHAR*)szODBCPW, SQL_NTS) < 0)
 	//	return iRetval;
 	
-	// 3. DB 연결 방법 : Driver
-	// * SQLDriverConnect() : 핸들없이 각종 정보를 포함하는 문자열을 사용하여 연결 설정
+	// 3. DB 연결 방법2
+	// * SQLDriverConnect() : ODBC Driver에 직접 접근하여 DB 연결
 	// - ODBC 드라이버명 조회 : 제어판 ~ 관리도구 ~ 데이터원본(ODBC) ~ 드라이버탭
 	WCHAR szConIn[255] = L"\0";
-	swprintf_s(szConIn, L"Driver={MySQL ODBC 5.3 Unicode Driver}; Server=%s; Database=%s; User=%s; Password=%s", szODBCIP, szODBCName, szODBCID, szODBCPW);
+	swprintf_s(szConIn, L"DRIVER={MySQL ODBC 5.3 Unicode Driver}; SERVER=%s; DATABASE=%s; UID=%s; PWD=%s; CHARSET=UTF8", szODBCIP, szODBCName, szODBCID, szODBCPW);
 	if (iRetval = SQLDriverConnect(g_hDbc, NULL, szConIn, wcslen(szConIn), NULL, NULL, NULL, SQL_DRIVER_COMPLETE/*SQL_DRIVER_NOPROMPT*/) < 0)
 		return iRetval;
 
