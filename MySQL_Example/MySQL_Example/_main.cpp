@@ -8,13 +8,11 @@
 #define df_DB_NAME "game_schema"
 #define df_DB_PORT 3306
 
-
 int main()
 {
 	MYSQL mysql;
 	MYSQL_RES* sqlResultSet;
 	MYSQL_ROW sqlRow;
-	int query_stat;
 
 	// * mysql_init() : √ ±‚»≠
 	mysql_init(&mysql);
