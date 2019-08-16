@@ -42,7 +42,7 @@ int main()
 	/**********************************************************/
 	// 쿼리 실행
 	/**********************************************************/
-	SQLCHAR		BuffNo[40], BuffID[40], BuffPass[40];
+	SQLCHAR		BuffNo[40], BuffID[40], BuffPass[1000];
 	SQLLEN		lBuffNo = 0, lBuffID = 0, lBuffPass = 0;
 	// 바인딩 (select문에서 데이터 목록을 가져오기 위함 + SQL 인젝션 방지)
 	// * SQLBindCol(명령핸들, 컬럼번호, 해당컬럼의 데이터유형, 버퍼, 버퍼 '길이', )  
@@ -62,7 +62,7 @@ int main()
 	//	SQLDescribeCol(hStmt, 컬럼번호, Buffer, sizeof(Buffer), NULL,NULL,NULL,NULL,NULL)
 	while (SQLFetch(g_hStmt) != SQL_NO_DATA)
 	{
-		wprintf(L"No: %s, ID:%s, Pass:%s\n", BuffNo, BuffID, BuffPass);
+		wprintf(L"%s	%s	%s\n", BuffNo, BuffID, BuffPass);
 		SQLGetDiagRec(SQL_HANDLE_STMT, g_hStmt, 1, (SQLTCHAR*)szStat, (SQLINTEGER*)&iNativeErr, (SQLTCHAR*)szMsg, 1024, &iMsglen);
 		//wprintf(L"%s\n", szMsg);
 

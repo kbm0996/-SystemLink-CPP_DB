@@ -52,7 +52,7 @@ int main()
 	sqlResultSet = mysql_store_result(&mysql);	
 	while ((sqlRow = mysql_fetch_row(sqlResultSet)) != NULL)
 	{
-		printf("%s %s %s\n", sqlRow[0], sqlRow[1], sqlRow[2]);
+		printf("%s	%s	%s\n", sqlRow[0], sqlRow[1], sqlRow[2]);
 	}
 
 	// * mysql_free_result() : 결과셋에 할당된 메모리 해제
