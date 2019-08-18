@@ -2,8 +2,7 @@
 
   ![capture](https://github.com/kbm0996/-SystemLink-CPPxDB/blob/master/jpg/figure0.png) 
 
-**ODBC**(Open DataBase Connectivity)는 DBMS(Database Management System) 사용을 위한 표준 규격의 API이다. ODBC는 프로그래밍 언어, 데이터베이스 시스템 및 운영 체제와 독립적이다. 
-따라서, 사용자는 ODBC 사용법만 따르면 접속처의 DB가 어떠한 DBMS에 관리되고 있는지 어떤 방법으로 사용을 해야하는지 알 필요 없이 접근할 수 있다.
+MySQL은 JDBC, ODBC, .Net 용 표준 드라이버를 제공하여 개발자가 원하는 언어로 DB 응용 프로그램을 만들 수 있다. 또한 Native C Library를 통해 MySQL을 애플리케이션에 직접 포함시킬 수도 있다.
 
 ## 📑 MySQL Library 다운로드 및 사용법
 
