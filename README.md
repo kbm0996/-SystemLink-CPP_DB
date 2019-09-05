@@ -12,7 +12,7 @@ MySQL 라이브러리를 이용한 DB 연결
   **figure 1. CPP+DB(MySQL)*
 
 ### 💻 CPP+DB(ODBC)
-ODBC를 이용한 D 연결
+ODBC를 이용한 DB 연결
   >![capture_manual](https://github.com/kbm0996/-SystemLink-CPPxDB/blob/master/jpg/odbc.png) 
   
   **figure 2. CPP+DB(ODBC)*
